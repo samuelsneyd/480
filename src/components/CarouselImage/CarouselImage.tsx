@@ -4,8 +4,7 @@ import { Paper } from '@mui/material';
 interface CarouselImageProps {
   image: {
     alt: string | undefined,
-    image: string | undefined,
-    src?: string
+    src: string | undefined,
     title: string | undefined
   };
 }
@@ -21,7 +20,7 @@ const CarouselImage = ({ image }: CarouselImageProps) => {
         objectFit: 'cover'
       }}
       alt={image.alt || image.title}
-      src={image.image || image.src}
+      src={image.src}
     />
   );
 };

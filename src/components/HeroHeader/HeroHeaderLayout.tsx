@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Box, Container, Skeleton, styled, SxProps, Theme } from '@mui/material';
+import arrowDownImage from '../../assets/images/icons/productHeroArrowDown.png';
 
 const ProductHeroLayoutRoot = styled('section')(({ theme }) => ({
   color: theme.palette.common.white,
@@ -77,7 +78,7 @@ const HeroHeaderLayout = (props: React.HTMLAttributes<HTMLDivElement> & HeroHead
         }
         <Box
           component="img"
-          src="../../../../static/images/icons/productHeroArrowDown.png"
+          src={arrowDownImage}
           height="16"
           width="12"
           alt="arrow down"

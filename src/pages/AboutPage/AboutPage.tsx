@@ -1,33 +1,21 @@
 import * as React from 'react';
-import { useEffect, useState } from 'react';
 import { Container, Grid, Typography } from '@mui/material';
 import Carousel from 'react-material-ui-carousel';
 import CarouselImage from '../../components/CarouselImage/CarouselImage';
 import PageTitle from '../../components/PageTitle/PageTitle';
 import withAnimation from '../../hooks/withAnimation';
-import axios from 'axios';
 import config from '../../config/config';
+import homePageImage from '../../assets/images/home_page_min.jpg';
 
-const fallbackImages = [
+const images = [
   {
     title: '480 - Nature Without Barriers',
     alt: '480 - Nature Without Barriers',
-    image: '../../../../static/images/home_page_min.jpg',
-    src: ''
+    src: homePageImage,
   }
 ];
 
 const AboutPage = () => {
-  const [images, setImages] = useState(fallbackImages);
-
-  useEffect(() => {
-    axios.get('/api/images?tag=about')
-      .then((response) => {
-        response.data?.length > 0 ? setImages(response.data) : null;
-      })
-      .catch(() => setImages(fallbackImages));
-  }, []);
-
   return (
     <Container>
       <PageTitle title={`About ${config.siteName}`} />

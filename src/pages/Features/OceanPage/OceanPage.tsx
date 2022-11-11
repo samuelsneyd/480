@@ -2,49 +2,31 @@ import * as React from 'react';
 import { Container, Grid, Link, Typography } from '@mui/material';
 import Carousel from 'react-material-ui-carousel';
 import CarouselImage from '../../../components/CarouselImage/CarouselImage';
-import CarouselSkeleton from '../../../components/CarouselImage/CarouselSkeleton';
 import PageTitle from '../../../components/PageTitle/PageTitle';
 import withAnimation from '../../../hooks/withAnimation';
-import { useEffect, useState } from 'react';
-import axios from 'axios';
+import schoolOfFishImage from '../../../assets/images/school-of-fish.jpg';
 
-const fallbackImages = [
+const images = [
   {
     title: 'School of fish',
     alt: 'School of fish underwater',
-    image: '../../../../static/images/school-of-fish.jpg'
+    src: schoolOfFishImage
   }
 ];
 
 const OceanPage = () => {
-  const [images, setImages] = useState(fallbackImages);
-  const [isLoaded, setIsLoaded] = useState(false);
-
-  useEffect(() => {
-    axios.get('/api/images?tag=ocean')
-      .then((response) => {
-        response.data?.length > 0 ? setImages(response.data) : null;
-      })
-      .catch(() => setImages(fallbackImages))
-      .finally(() => setIsLoaded(true));
-  }, []);
-
   return (
     <Container>
       <PageTitle title={'Beaches & Swimming'} />
       <Grid container spacing={2} minHeight={450} sx={{ mb: 1 }}>
         <Grid item xs={12} md={6}>
-          {isLoaded
-            ?
-            <Carousel
-              animation={'fade'}
-              duration={2000}
-              swipe
-            >
-              {images.map((image) => <CarouselImage key={image.title} image={image} />)}
-            </Carousel>
-            : <CarouselSkeleton />
-          }
+          <Carousel
+            animation={'fade'}
+            duration={2000}
+            swipe
+          >
+            {images.map((image) => <CarouselImage key={image.title} image={image} />)}
+          </Carousel>
         </Grid>
         <Grid item xs={12} md={6}>
           <Typography variant={'h5'}>

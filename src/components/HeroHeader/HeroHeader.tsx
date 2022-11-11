@@ -4,9 +4,8 @@ import { Link } from 'react-router-dom';
 import { Button, Paper } from '@mui/material';
 import HeroHeaderLayout from './HeroHeaderLayout';
 import theme from '../../config/theme';
-
-const backgroundImage = '../../../../static/images/home_page_min.jpg';
-const logo = '../../../../static/images/logo_text_min.png';
+import backgroundImage from '../../assets/images/home_page_min.jpg';
+import logo from '../../assets/images/logo_text_min.png';
 
 const HeroHeader = () => {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
