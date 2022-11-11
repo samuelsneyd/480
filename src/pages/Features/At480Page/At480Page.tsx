@@ -11,7 +11,7 @@ const images = [
   {
     title: '480 Landscape',
     alt: '480 Landscape',
-    image: homePageImage
+    src: homePageImage
   }
 ];
 

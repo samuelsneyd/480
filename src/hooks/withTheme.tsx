@@ -8,6 +8,7 @@ function withTheme<P>(Component: React.ComponentType<P>) {
     <ThemeProvider theme={theme}>
       {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
       <CssBaseline />
+      {/* @ts-ignore */}
       <Component {...props} />
     </ThemeProvider>
   );
