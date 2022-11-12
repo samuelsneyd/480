@@ -1,3 +1,0 @@
-## TermsPage
-
-Placeholder
