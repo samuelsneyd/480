@@ -22,7 +22,7 @@ const pages = [
   },
   {
     title: 'Book Now',
-    href: config.bookingLink
+    href: '/book/'
   },
   {
     title: 'Contact',

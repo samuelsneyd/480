@@ -7,12 +7,12 @@ const BookingPage = () => {
   return (
     <Container>
       <PageTitle title={'Booking'} />
-      <Typography variant={'h5'} sx={{ my: 2 }} align={'center'}>
+      <Typography variant={'h5'} sx={{ mt: 2, mb: 6 }} align={'center'}>
         <Link
           href={'https://www.airbnb.co.nz/rooms/737153204915599612'}
           target={'_blank'}
         >
-          {'Book via AirBnB'}
+          {'Click here to book via AirBnB'}
         </Link>
       </Typography>
     </Container>
