@@ -21,13 +21,13 @@ const AppFooterLinks = ({ footers }: AppFooterLinksProps) => {
     <Grid
       container
       spacing={4}
-      justifyContent={'space-evenly'}
+      justifyContent={'space-between'}
     >
       {footers.map((footer) => (
         <Grid
           item
           xs={6}
-          sm={3}
+          sm={4}
           key={footer.title}
         >
           <Button
