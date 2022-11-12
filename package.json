@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://samuelsneyd.github.io/480",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
