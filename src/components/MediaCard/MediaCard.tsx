@@ -14,10 +14,8 @@ interface Media {
   subtitle?: string;
   description: string;
   website: string;
-  tags: string[];
   image: string;
   alt: string;
-  priority: number;
 }
 
 interface MediaCardProps {

@@ -12,9 +12,7 @@ import HomePage from './pages/HomePage/HomePage';
 import LocationPage from './pages/LocationPage/LocationPage';
 import OceanPage from './pages/Features/OceanPage/OceanPage';
 import OtherPage from './pages/Features/OtherPage/OtherPage';
-import PrivacyPage from './pages/PrivacyPage/PrivacyPage';
 import RestaurantsPage from './pages/Features/RestaurantsPage/RestaurantsPage';
-import TermsPage from './pages/TermsPage/TermsPage';
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -35,8 +33,6 @@ const AnimatedRoutes = () => {
       <Route path={'contact'} element={<ContactPage />} />
       <Route path={'about'} element={<AboutPage />} />
       <Route path={'faq'} element={<FAQPage />} />
-      <Route path={'terms'} element={<TermsPage />} />
-      <Route path={'privacy'} element={<PrivacyPage />} />
       <Route path={'*'} element={<ErrorPage />} />
     </Routes>
   );

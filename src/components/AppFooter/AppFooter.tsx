@@ -39,19 +39,6 @@ const footers = [
     ]
   },
   {
-    title: 'Legal',
-    description: [
-      {
-        text: 'Terms',
-        href: '/terms/'
-      },
-      {
-        text: 'Privacy',
-        href: '/privacy/'
-      }
-    ]
-  },
-  {
     title: 'Misc',
     description: [
       {
