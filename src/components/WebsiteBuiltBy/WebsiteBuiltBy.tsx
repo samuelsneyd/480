@@ -13,7 +13,7 @@ const WebsiteBuiltBy = () => {
         {'Samuel Sneyd'}
       </Link>
       {'. See source code on '}
-      <Link href={'https://github.com/samuelsneyd/retreat_480'}
+      <Link href={'https://github.com/samuelsneyd/480'}
             rel={'noopener noreferrer'}
             title={'GitHub Repository'}
             target={'_blank'}
