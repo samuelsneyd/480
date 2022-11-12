@@ -18,7 +18,7 @@ jobs:
           node-version: 16
 
       - name: Install dependencies
-        users: bahmutov/npm-install@v1
+        uses: bahmutov/npm-install@v1
 
       - name: Build Project
         run: npm run build
