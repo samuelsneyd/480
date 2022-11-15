@@ -10,7 +10,7 @@ const restaurants = [
     name: 'Schnappa Rock',
     subtitle: 'Fresh, local & sustainable',
     description: 'Located in the Tutukaka Marina, Schnappa Rock Restaurant and bar is a haven of tropical escapism. Perfect for post-dive drinks, romantic dining, or a family meal.',
-    website: 'https://www.schnapparock.co.nz/',
+    website: 'http://www.schnapparock.co.nz/', // HTTPS not supported for this website
     image: schnappaRockImage,
     alt: 'Schnappa Rock'
   },
