@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Container, Grid, Typography } from '@mui/material';
+import { Container, Grid, Link, Typography } from '@mui/material';
 import GoogleMapsLocation from '../../components/GoogleMapsLocation/GoogleMapsLocation';
 import PageTitle from '../../components/PageTitle/PageTitle';
 import config from '../../config/config';
@@ -43,6 +43,17 @@ const LocationPage = () => {
             After 5 minutes or so along our private road keep a look out for “Kiwi live here” signs. There are two of
             them. When you see the second one, you’ll be just a few metres from our turn off. Keep a look out for the
             480 sign on the right, drive up the driveway and you have arrived.
+          </Typography>
+          <Typography sx={{ my: 1 }}>
+            {'See live weather updates '}
+            <Link href={'https://app.weathercloud.net/d3748583664#current'}
+                  rel={'noopener noreferrer'}
+                  title={'Live Weather Update'}
+                  target={'_blank'}
+            >
+              {'here'}
+            </Link>
+            {'.'}
           </Typography>
         </Grid>
       </Grid>

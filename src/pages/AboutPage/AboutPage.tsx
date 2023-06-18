@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Container, Grid, Typography } from '@mui/material';
+import { Container, Grid, Link, Typography } from '@mui/material';
 import Carousel from 'react-material-ui-carousel';
 import CarouselImage from '../../components/CarouselImage/CarouselImage';
 import PageTitle from '../../components/PageTitle/PageTitle';
@@ -57,6 +57,17 @@ const AboutPage = () => {
           <Typography sx={{ my: 1 }}>
             To protect our biodiversity {config.siteName} is not open to pets, and due to fire danger is a no smoking
             retreat.
+          </Typography>
+          <Typography sx={{ my: 1 }}>
+            {'See live weather updates '}
+            <Link href={'https://app.weathercloud.net/d3748583664#current'}
+                  rel={'noopener noreferrer'}
+                  title={'Live Weather Update'}
+                  target={'_blank'}
+            >
+              {'here'}
+            </Link>
+            {'.'}
           </Typography>
         </Grid>
       </Grid>
